@@ -1,0 +1,33 @@
+.popup-sorry {
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000d1;
+    ;
+    transition: all 0.2s;
+}
+
+.popup-sorry.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-popup-sorry {
+    text-align: center;
+    color: #fff;
+    min-height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-popup-sorry.active {
+    display: flex;
+    z-index: 5;
+}

@@ -1,0 +1,561 @@
+/* Слайдер */
+
+.slick-slider {}
+
+
+/* Слайдер запущен */
+
+.slider-reviews.slick-slider.slick-initialized {
+    margin-left: 0 5px;
+}
+
+
+/* Слайдер с точками */
+
+.slick-slider.slick-dotted {}
+
+
+/* Ограничивающая оболочка */
+
+.slick-list {
+    overflow: hidden;
+}
+
+
+/* Лента слайдов */
+
+.slick-track {
+    display: flex;
+}
+
+
+/* Слайд */
+
+.slick-slide {
+    text-align: center;
+}
+
+
+/* Слайд активный (показывается) */
+
+.slick-slide.slick-active {}
+
+
+/* Слайд основной */
+
+.slick-slide.slick-current {}
+
+
+/* Слайд по центру */
+
+.slick-slide.slick-center {}
+
+
+/* Клонированный слайд */
+
+.slick-slide.slick-cloned {}
+
+
+/* Стрелка */
+
+.slick-arrow {}
+
+
+/* Стрелка влево */
+
+.slick-arrow.slick-prev {}
+
+
+/* Стрелка вправо */
+
+.slick-arrow.slick-next {}
+
+
+/* Стрелка не активная */
+
+.slick-arrow.slick-disabled {}
+
+
+/* Точки (булиты) */
+
+.slick-dots {}
+
+.slick-dots li {}
+
+
+/* Активная точка */
+
+.slick-dots li.slick-active {}
+
+
+/* Элемент точки */
+
+.slick-dots li button {}
+
+
+/* Слайдер подборок */
+
+.slider {
+    padding: 0 10px;
+    min-width: 0;
+    position: relative;
+    width: 100%;
+}
+
+.slider .slick-arrow {
+    margin: -60px -10px 0 -10px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+}
+
+.slider .slick-arrow.slick-prev {
+    width: 30px;
+    height: 30px;
+    background: url(images/svg/arrow-left.svg) 0 0 no-repeat;
+    left: 0;
+    z-index: 0;
+}
+
+.slider .slick-arrow.slick-next {
+    width: 30px;
+    height: 30px;
+    background: url(images/svg/arrow-right.svg) 0 0 no-repeat;
+    right: 0;
+    z-index: 0;
+}
+
+.slider .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider .slick-dots li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.slider .slick-dots li.slick-active button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: #F4683F;
+    border-radius: 20px;
+}
+
+.slider .slick-dots button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+
+/* Слайдер отзывы*/
+
+.slider-reviews {
+    width: 100%;
+    min-width: 0;
+    position: relative;
+}
+
+.slider-reviews .slick-arrow {
+    margin: -40px -30px 0 -30px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+}
+
+.slider-reviews .slick-arrow.slick-prev {
+    width: 40px;
+    height: 40px;
+    background: url(images/svg/arrow-left-black\ .svg) 0 0 no-repeat;
+    left: 0;
+}
+
+.slider-reviews .slick-arrow.slick-next {
+    width: 40px;
+    height: 40px;
+    background: url(images/svg/arrow-right-black\ .svg) 0 0 no-repeat;
+    right: 0;
+}
+
+.slider-reviews .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-reviews .slick-dots li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.slider-reviews .slick-dots li.slick-active button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: #F4683F;
+    border-radius: 20px;
+}
+
+.slider-reviews .slick-dots button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: #E5E5E5;
+    border-radius: 20px;
+}
+
+
+/* Слайд */
+
+.slider-reviews .slick-slide {
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 20px;
+}
+
+
+/* Слайд активный (показывается) */
+
+.slick-slide.slick-active {}
+
+
+/* Слайд основной */
+
+.slick-slide.slick-current {}
+
+
+/* Слайд по центру */
+
+.slick-slide.slick-center {}
+
+
+/* Клонированный слайд */
+
+.slick-slide.slick-cloned {}
+
+
+/* Слайдер галерея*/
+
+.slider-gallery {
+    width: 100%;
+    padding: 200px 10px;
+    min-width: 0;
+    position: relative;
+}
+
+.slider-gallery img {
+    object-fit: contain;
+    height: 850px;
+}
+
+.slider-gallery .slick-arrow {
+    margin: -40px -30px 0 -30px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+}
+
+.slider-gallery .slick-slide {
+    text-align: center;
+}
+
+.slider-gallery .slick-arrow.slick-prev {
+    width: 70px;
+    height: 70px;
+    background: url(images/svg/arrow-left.svg) no-repeat center / cover;
+    left: 50px;
+}
+
+.slider-gallery .slick-arrow.slick-next {
+    width: 70px;
+    height: 70px;
+    background: url(images/svg/arrow-right.svg) no-repeat center / cover;
+    right: 40px;
+}
+
+.slider-gallery .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-gallery .slick-dots li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.slider-gallery .slick-dots li.slick-active button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: #F4683F;
+    border-radius: 20px;
+}
+
+.slider-gallery .slick-dots button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: #E5E5E5;
+    border-radius: 20px;
+}
+
+
+/* Слайдер каталог*/
+
+.catalog-slider {
+    width: 100%;
+    padding: 0 10px;
+    min-width: 0;
+    position: relative;
+}
+
+.catalog-slider.slick-slider.slick-initialized {
+    padding: 0;
+}
+
+.catalog-slider .slick-list {
+    overflow: hidden;
+    width: 100%;
+}
+
+.catalog-slider .slick-track {
+    display: flex;
+}
+
+.catalog-slider .slick-arrow {
+    margin: -40px -30px 0 -30px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+}
+
+.catalog-slider .slick-arrow.slick-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    width: 33px;
+    height: 33px;
+    background: url(images/svg/arrow-left.svg) 0 0 no-repeat;
+    left: 40px;
+    top: 170px;
+    border-radius: 100%;
+}
+
+.catalog-slider .slick-arrow.slick-next {
+    border: 1px solid #fff;
+    width: 33px;
+    height: 33px;
+    background: url(images/svg/arrow-right.svg) 0 0 no-repeat;
+    right: 40px;
+    top: 170px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+.catalog-slider .slick-dots {
+    width: 100%;
+    bottom: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.catalog-slider .slick-dots li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.catalog-slider .slick-dots li.slick-active button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: #F4683F;
+    border-radius: 20px;
+}
+
+.catalog-slider .slick-dots button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: #E5E5E5;
+    border-radius: 20px;
+}
+
+
+/* Слайдер галерея страница коттеджа */
+
+
+/* Слайдер */
+
+.photo-gallery-slider {
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    z-index: 100;
+}
+
+
+/* Слайдер запущен */
+
+.photo-gallery-slider.slick-initialized {}
+
+
+/* Слайдер с точками */
+
+.photo-gallery-slider.slick-dotted {}
+
+
+/* Ограничивающая оболочка */
+
+.photo-gallery-slider.slick-list {
+    overflow: hidden;
+}
+
+
+/* Лента слайдов */
+
+.photo-gallery-slider.slick-track {
+    display: flex;
+}
+
+
+/* Слайд */
+
+.photo-gallery-slider.slick-slide {
+    text-align: center;
+}
+
+
+/* Слайд активный (показывается) */
+
+.photo-gallery-slider.slick-slide.slick-active {}
+
+
+/* Слайд основной */
+
+.photo-gallery-slider.slick-slide.slick-current {}
+
+
+/* Слайд по центру */
+
+.photo-gallery-slider.slick-slide.slick-center {}
+
+
+/* Клонированный слайд */
+
+.photo-gallery-slider.slick-slide.slick-cloned {}
+
+
+/* Нижняя полоса слайдера в галерее */
+
+.slider-nav {
+    display: flex;
+    position: absolute;
+    height: 100px;
+    bottom: 70px;
+}
+
+
+/* Слайдер страница коттеджа мобильная версия*/
+
+.catalog-slider-single {
+    height: 32vh;
+    width: 100%;
+    padding: 0 10px;
+    min-width: 0;
+    position: relative;
+}
+
+.catalog-slider-single.slick-slider.slick-initialized {
+    padding: 0;
+}
+
+.catalog-slider-single .slick-list {
+    overflow: hidden;
+    width: 100%;
+}
+
+.catalog-slider-single .slick-track {
+    display: flex;
+    overflow: hidden;
+}
+
+.catalog-slider-single .slick-arrow {
+    margin: -40px -30px 0 -30px;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+}
+
+.catalog-slider-single .slick-arrow.slick-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    width: 33px;
+    height: 33px;
+    background: url(images/svg/arrow-left.svg) 0 0 no-repeat;
+    left: 40px;
+    top: 170px;
+    border-radius: 100%;
+}
+
+.catalog-slider-single .slick-arrow.slick-next {
+    border: 1px solid #fff;
+    width: 33px;
+    height: 33px;
+    background: url(images/svg/arrow-right.svg) 0 0 no-repeat;
+    right: 40px;
+    top: 170px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+.catalog-slider-single .slick-dots {
+    height: 10px;
+    width: 100%;
+    bottom: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0px;
+}
+
+.catalog-slider-single .slick-dots li {
+    list-style: none;
+    width: 100%;
+}
+
+.catalog-slider-single .slick-dots li.slick-active button {
+    font-size: 0;
+    /* width: 6px; */
+    height: 12px;
+    background: #F4683F;
+    border-radius: 20px;
+}
+
+.catalog-slider-single .slick-dots button {
+    font-size: 0;
+    width: 100%;
+    height: 2px;
+    background: #E5E5E5;
+    border-radius: 20px;
+}

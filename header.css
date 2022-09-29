@@ -1,0 +1,460 @@
+/* Шапка сайта */
+
+.header {
+    color: #fff;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+/* Навигация */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 60px;
+}
+
+.nav__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__item {
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.nav__item:hover {
+    color: #F4683F;
+    transition: all .6s;
+}
+
+.nav__item:hover {
+    color: #F4683F;
+    transition: all .6s;
+}
+
+.logo {
+    background: url(images/svg/logo_light.svg) 0 0/100% 100% no-repeat;
+    width: 280px;
+    height: 38px;
+    margin-right: 40px;
+}
+
+
+/* Кнопка локации */
+
+.geo {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 35px;
+}
+
+.arrow::before,
+.arrow::after {
+    content: '';
+    /* z-index: 1; */
+    width: 9px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    right: -17.5px;
+    border-radius: 7px;
+}
+
+.arrow::after {
+    transform: rotate(45deg);
+    right: -12px;
+}
+
+.arrow::before {
+    transform: rotate(-45deg);
+}
+
+
+/* Кнопка каталога в шапке */
+
+.nav__btn {
+    color: #fff;
+    padding: 9px 20px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 200px;
+}
+
+.nav__btn:hover {
+    box-shadow: 0px 2px 21px #F4683F;
+    border: 1px solid #F4683F;
+    background-color: #F4683F;
+    transition: all .2s;
+}
+
+
+/* Кнопка избранное */
+
+.favorites {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    animation: pulse 2s ease-in-out infinite;
+    transform: scale(5);
+}
+
+.like-marker_header {
+    display: none;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #F4683F;
+    right: -3px;
+    top: 0px;
+}
+
+.like-marker {
+    display: none;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #F4683F;
+    right: -3px;
+}
+
+
+/* Кнопка поиска */
+
+.search-ico svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
+}
+
+
+/* Кнопка телефона */
+
+.tel-link {
+    margin-right: 25px;
+}
+
+.tel-ico svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+
+/* Кнопка бургер */
+
+.burger {
+    z-index: 5;
+    position: relative;
+    width: 25px;
+    height: 20.5px;
+    margin-left: 10px;
+}
+
+.burger span {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 2.5px;
+    width: 100%;
+    left: 0;
+    top: 9px;
+    border-radius: 5px;
+    transition: all 0.1s;
+}
+
+.burger::before,
+.burger::after {
+    content: '';
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    height: 2.5px;
+    width: 100%;
+    left: 0;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+
+/* Светлая шапка */
+
+.header-white {
+    background-color: #fff;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 1px solid #C0C2D7;
+    z-index: 2;
+    /* transition: all .3s ease; */
+}
+
+.header-white-scroll {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    border-bottom: 1px solid #C0C2D7;
+    z-index: 2;
+}
+
+.nav-light {
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.nav-light-scroll {
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+.nav__item-light {
+    color: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.nav__item a {
+    color: #FFFFFF;
+}
+
+.nav__item-light a {
+    color: #333333;
+}
+
+.nav__item a:hover {
+    color: #F4683F;
+    transition: all .6s;
+}
+
+.nav__item svg:hover.nav__item a {
+    color: #F4683F;
+    transition: all .6s;
+}
+
+.nav__item-light:hover {
+    color: #F4683F;
+    transition: all .6s;
+}
+
+.logo-light {
+    background: url(images/svg/logo_dark.svg) 0 0/100% 100% no-repeat;
+    width: 280px;
+    height: 38px;
+    margin-right: 40px;
+}
+
+.logo-light.active {
+    background: url(images/svg/logo_light.svg) 0 0/100% 100% no-repeat;
+    transition: all 1s;
+}
+
+.arrow-light::before,
+.arrow-light::after {
+    content: '';
+    z-index: 1;
+    width: 9px;
+    height: 2px;
+    background-color: #333333;
+    position: absolute;
+    right: -17.5px;
+    border-radius: 7px;
+}
+
+.arrow-light::after {
+    transform: rotate(45deg);
+    right: -12px;
+}
+
+.arrow-light::before {
+    transform: rotate(-45deg);
+}
+
+.nav__btn-light {
+    color: #333333;
+    padding: 9px 20px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 200px;
+}
+
+.nav__btn-light:hover {
+    color: #fff;
+    box-shadow: 0px 2px 21px #F4683F;
+    border: 1px solid #F4683F;
+    background-color: #F4683F;
+    transition: all .2s;
+}
+
+.tel-light {
+    color: #333333;
+    margin-right: 25px;
+}
+
+.search {
+    color: #fff;
+    font-family: 'Montserrat';
+    background: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.search-light {
+    color: #000000;
+}
+
+.burger-light span {
+    background-color: #333333;
+    z-index: 2;
+}
+
+.burger-light::before,
+.burger-light::after {
+    background-color: #333333;
+    z-index: 2;
+}
+
+.burger-light.active::before {
+    background-color: #fff;
+}
+
+.burger-light.active::after {
+    background-color: #fff;
+}
+
+
+/* Меню бургера */
+
+.nav-light-scroll.active {
+    position: fixed;
+    width: 100%;
+}
+
+.burger__nav {
+    z-index: 1;
+    padding: 100px 20px 20px 20px;
+    color: #fff;
+    top: 0;
+    right: -100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #161723;
+    transition: all 0.5s;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burger__nav.active {
+    right: 0;
+}
+
+.burger.active::before {
+    transform: rotate(315deg);
+    top: 9px;
+}
+
+.burger.active::after {
+    transform: rotate(-315deg);
+    bottom: 9px;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger-btn {
+    background: none;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 12px;
+    width: 100%;
+    border: 1px solid #C0C2D7;
+    box-sizing: border-box;
+    border-radius: 200px;
+}
+
+.burger-btn:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.burger__item {
+    color: #C0C2D7;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0px;
+    margin-top: 30px;
+}
+
+.burger__item a {
+    color: #C0C2D7;
+    padding: 5px 5px;
+}
+
+.burger__item a:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+    color: #F4683F;
+}
+
+.burger__tel {
+    color: #C0C2D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger__links {
+    margin-top: 20px;
+}

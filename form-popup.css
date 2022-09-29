@@ -1,0 +1,237 @@
+/* Форма кейтеринг */
+
+.popup-form {
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000d1;
+    ;
+    transition: all 0.2s;
+}
+
+.popup-form.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-popup.active {
+    display: flex;
+}
+
+.form-popup {
+    min-height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-popup .form {
+    z-index: 5;
+    text-align: justify;
+    background: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+}
+
+.form__title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.form__description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.form__item {
+    width: 100%;
+    padding-left: 20px;
+    height: 50px;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #C0C2D7;
+    box-sizing: border-box;
+    border-radius: 250px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.form__item:first-child {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #8f91a1;
+}
+
+.form__item_mod {
+    font-family: 'Montserrat';
+    width: 50%;
+    padding-left: 20px;
+    height: 50px;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #C0C2D7;
+    box-sizing: border-box;
+    border-radius: 250px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    border: none;
+    background: #FFFFFF;
+}
+
+.form__label {
+    z-index: 2;
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #C0C2D7;
+}
+
+.popup__close {
+    width: 34px;
+    height: 34px;
+    background: url(/images/svg/close.svg);
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+
+.popup__close_burger {
+    width: 34px;
+    height: 34px;
+    background: url(/images/svg/close.svg);
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+
+a.form__btn {
+    width: 100%;
+    font-size: 18px;
+}
+
+
+/* Форма заявка на сотрудничество */
+
+.popup-form-rent {
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000ab;
+    transition: all 0.2s;
+}
+
+.popup-form-rent.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-popup-rent.active {
+    display: flex;
+}
+
+.form-popup-rent {
+    min-height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-popup-rent .form {
+    z-index: 5;
+    text-align: justify;
+    background: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+/* Форма заявка на подбор */
+
+.popup-form-call_request {
+    z-index: 4;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000ab;
+    transition: all 0.2s;
+}
+
+.popup-form-call_request.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-popup-call_request.active {
+    display: flex;
+}
+
+.form-popup-call_request {
+    min-height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.form-popup-call_request .form {
+    z-index: 5;
+    text-align: justify;
+    background: #FFFFFF;
+    border-radius: 20px;
+    position: relative;
+}
+
+.date__description {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form__description {
+    text-align: center;
+}
+
+.form__title {
+    text-align: center;
+}

@@ -1,0 +1,242 @@
+@media(min-width:1850px) {
+    .prise__value-data {
+        top: 200px;
+    }
+}
+
+@media(max-width:1850px) {
+    h4 {
+        font-size: 18px;
+    }
+    .card__parameters {
+        font-size: 14px;
+    }
+    .prise__value-data {
+        top: 200px;
+    }
+}
+
+@media(max-width:1730px) {
+    .prise__value-data {
+        top: 150px;
+    }
+    .card-description {
+        padding: 11px;
+    }
+    .price__list_catalog {
+        font-size: 16px;
+    }
+    .price__value {
+        font-size: 14px;
+    }
+    .card {
+        height: 240px;
+    }
+    .card__img img {
+        /* width: 300px; */
+        height: 240px;
+    }
+    .card__buttons {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:1485px) {
+    .card__parameters {
+        font-size: 12px;
+    }
+    .price__list_catalog {
+        font-size: 16px;
+    }
+    .parameters {
+        font-size: 12px;
+    }
+    .price__value {
+        font-size: 12px;
+    }
+    .filters {
+        padding: 0 50px 20px 50px;
+    }
+}
+
+@media(max-width:1399px) {
+    .collection-description {
+        font-size: 16px;
+    }
+    .collection-title {
+        font-size: 36px;
+    }
+    .parameters {
+        justify-content: flex-start;
+        align-items: baseline;
+        padding: 0;
+    }
+    .price__list1 {
+        display: flex;
+    }
+    .price__list2 {
+        display: flex;
+    }
+    .filters {
+        justify-content: flex-end;
+    }
+}
+
+@media(max-width:1300px) {
+    .card__img img {
+        width: 250px;
+    }
+    .number-of-people {
+        padding: 9px;
+        top: 20px;
+        right: 20px;
+    }
+    .filters__btn_mobile {
+        width: 160px;
+        background: #fff;
+    }
+    .filter-title {
+        display: inline;
+    }
+    .price__value-data {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 150%;
+        /* identical to box height, or 24px */
+        font-feature-settings: 'pnum'on, 'lnum'on;
+        color: #333333;
+    }
+}
+
+@media(max-width:1200px) {
+    .card__img img {
+        width: 220px;
+    }
+    .card__parameters {
+        border: none;
+    }
+}
+
+@media(max-width:992px) {
+    .map {
+        display: none;
+    }
+    .catalog-wrapper {
+        padding: 0;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+    .filters {
+        padding: 0px 20px 10px 20px;
+        margin: 0 0 -0 0;
+    }
+}
+
+@media(max-width:767px) {
+    .catalog-slider-single-wrapper {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .collection-description {
+        font-size: 14px;
+    }
+    .collection-title {
+        font-size: 26px;
+    }
+    .slick-track {
+        overflow: hidden;
+    }
+    .map {
+        display: none;
+    }
+    .container-catalog {
+        padding: 0 20px 0 20px;
+    }
+    .catalog-wrapper {
+        overflow-y: auto;
+        padding-bottom: 210px;
+    }
+    .filters__btn_mobile {
+        width: 50%;
+        font-size: 14px;
+        width: auto;
+        padding: 9px 25px;
+    }
+    .btn-orange_filters {
+        width: 50%;
+        font-size: 14px;
+        width: auto;
+        padding: 11px 20px;
+    }
+    .filter-title {
+        display: inline;
+    }
+}
+
+@media(max-width:479px) {
+    .prise__value-data {
+        position: inherit;
+    }
+    .card-info-btn {
+        border: 1px solid #C0C2D7;
+        color: #333333;
+        position: unset;
+    }
+    .show-map-btn {
+        display: none;
+    }
+    .btn-orange_filters {
+        width: 50%;
+    }
+    .filters__btn_mobile {
+        width: 50%;
+    }
+    .filters {
+        justify-content: space-between;
+    }
+    .card {
+        height: 327px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card__img {
+        width: 100%;
+        height: 200px;
+    }
+    .card__img img {
+        width: 100%;
+        height: 200px;
+    }
+    .number-of-people {
+        padding: 9px;
+        top: -180px;
+        right: 20px;
+    }
+    .card__buttons {
+        position: absolute;
+        margin-top: 0;
+        bottom: -37px;
+        right: 10px;
+    }
+    .price__list_catalog {
+        position: absolute;
+        top: 75px;
+        left: 15px;
+    }
+    .prise__value {
+        font-size: 16px;
+        padding-left: 0;
+    }
+    .parameters {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+    .checkbox-collection {
+        top: -60px;
+        right: 0px;
+    }
+}

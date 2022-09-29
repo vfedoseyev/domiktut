@@ -1,0 +1,527 @@
+@media(max-width:1500px) {
+    body {
+        font-family: 'montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17px;
+        margin: 0 auto;
+        scroll-behavior: smooth;
+    }
+    .container {
+        box-sizing: border-box;
+        max-width: 1400px;
+        padding: 0 50px;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 140%;
+    }
+    h3 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 150%;
+    }
+    h5 {
+        font-size: 22px;
+    }
+    /* Шапка сайта */
+    .header {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .header-white {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .header-white-scroll {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .nav {
+        padding: 30px 50px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .nav-light {
+        padding: 20px 50px;
+    }
+    .nav-light-scroll {
+        padding: 20px 50px;
+    }
+    .logo {
+        width: 183px;
+        margin-right: 20px;
+    }
+    .logo-light {
+        width: 183px;
+        margin-right: 20px;
+    }
+    .search {
+        font-size: 14px;
+        color: #fff;
+    }
+    .search-light {
+        color: black;
+    }
+}
+
+@media(max-width:1399px) {
+    .main-form p {
+        font-size: 14px;
+    }
+    .container {
+        max-width: none;
+        padding: 0 50px;
+    }
+    .rent {
+        margin-top: 200px;
+    }
+}
+
+@media(max-width:1280px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width:1200px) {
+    .selection__card img {
+        width: 130px;
+    }
+    .selections__title {
+        font-size: 13px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .laptop-hidden {
+        display: none;
+    }
+    .container {
+        max-width: none;
+        padding: 0 50px;
+    }
+    .tel {
+        margin-right: 10px;
+    }
+    .tel-ico svg {
+        width: 20px;
+        height: 20px;
+    }
+    .favorites {
+        margin-right: 10px;
+    }
+    .catering__item {
+        padding: 10px;
+        width: 33.33%;
+        font-size: 14px;
+    }
+    .catering__cards {
+        margin-top: 80px;
+    }
+    .catering__card {
+        font-size: 14px;
+        padding: 30px;
+    }
+}
+
+@media (max-width:1060px) {
+    .popular__card {
+        width: 50%;
+    }
+}
+
+@media(max-width:992px) {
+    .btn-orange {
+        font-size: 16px;
+    }
+    .confidencial {
+        margin-top: 20px;
+    }
+    .rent {
+        margin-top: 50px;
+    }
+    .home__btn {
+        font-size: 18px;
+        width: 310px;
+        margin-top: 50px;
+    }
+    .popular {
+        margin-top: 90px;
+    }
+    .hidden {
+        display: block;
+    }
+    .tablet-hidden {
+        display: none;
+    }
+    .container {
+        max-width: none;
+        padding: 0 20px;
+    }
+    .nav {
+        padding: 20px;
+    }
+    .nav-light {
+        padding: 10px 20px;
+    }
+    .nav-light-scroll {
+        padding: 10px 20px;
+    }
+    .geo {
+        margin-bottom: 35px;
+        margin-right: 0;
+    }
+    .home__title {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .selections-mobile {
+        margin-top: 70px;
+    }
+    .selections__cards-mobile {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .selection__card-mobile {
+        padding: 10px;
+        width: 33.33%;
+    }
+    .selection__card-mobile img {
+        width: 100%;
+    }
+    .selections__title-mobile {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+        padding: 10px;
+        text-align: center;
+    }
+    .about {
+        margin-top: 70px;
+    }
+    .about__description {
+        margin-top: 18px;
+    }
+    .about__card {
+        max-width: 50%;
+        min-width: 220px;
+    }
+    .popular__card {
+        width: 50%;
+    }
+    .catering {
+        margin-top: 90px;
+    }
+    .catering__item {
+        width: 50%;
+    }
+    .catering__cards {
+        margin-top: 50px;
+    }
+    .catering__card {
+        font-size: 14px;
+        padding: 25px;
+    }
+}
+
+@media(max-width:767px) {
+    .nav__item {
+        margin-left: 0;
+    }
+    .form {
+        width: 100%;
+        padding: 50px 30px;
+    }
+    .form__title {
+        text-align: center;
+        font-size: 26px;
+    }
+    .form__item {
+        width: 100%;
+    }
+    .form__description {
+        font-size: 14px;
+    }
+    .mobile__btn {
+        display: flex;
+    }
+    .confidencial {
+        display: flex;
+        flex-direction: column;
+    }
+    .tablet-visible {
+        display: flex;
+    }
+    .burger-btn {
+        padding: 8px 15px;
+    }
+    .rent-wrap {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .rent__title {
+        text-align: center;
+    }
+    .rent__decription {
+        text-align: center;
+    }
+    .background-block-home {
+        height: 100%;
+    }
+    .container {
+        max-width: none;
+        padding: 0 20px 60px 20px;
+    }
+    .content {
+        margin: 0 -10px;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+    .background-block-about {
+        background-position: initial;
+    }
+    h1 {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 140%;
+    }
+    h3 {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 150%;
+    }
+    h4 {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 150%;
+    }
+    h5 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 150%;
+        max-width: 260px;
+    }
+    .container {
+        max-width: none;
+        padding: 0 20px 60px 20px;
+    }
+    .tel-ico svg {
+        width: 22px;
+        height: 22px;
+    }
+    .search-ico svg {
+        height: 25px;
+        width: 25px;
+    }
+    .card__price {
+        font-size: 16px;
+    }
+    .about__cards {
+        margin-top: 40px;
+    }
+    .about__card {
+        padding: 10px;
+        max-width: 50%;
+        min-width: 220px;
+    }
+    .about__description {
+        margin-top: 17px;
+    }
+    .selections-mobile {
+        margin-top: 96px;
+    }
+    .selections__cards-mobile {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .selection__card-mobile {
+        padding: 10px;
+        width: 50%;
+    }
+    .selection__card-mobile img {
+        width: 100%;
+    }
+    .selections__title-mobile {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+        padding: 10px;
+        text-align: center;
+    }
+    .popular {
+        margin-top: 100px;
+        width: 100%;
+    }
+    .popular__cards {
+        margin-top: 40px;
+    }
+    .popular__card {
+        padding: 10px;
+        width: 50%;
+    }
+    .faq {
+        margin-top: 90px;
+    }
+    .question {
+        font-size: 16px;
+    }
+    .answer {
+        font-size: 14px;
+    }
+    .catering__cards {
+        margin-top: 40px;
+    }
+    .tel {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 479px) {
+    .ajax-search {
+        font-size: 14px;
+    }
+    .burger {
+        margin-left: 0;
+    }
+    .search-popup input {
+        font-size: 14px;
+    }
+    .form {
+        padding: 20px;
+    }
+    .form__description {
+        margin-bottom: 20px;
+    }
+    .small-visible {
+        display: block;
+    }
+    .mobile-small-hidden {
+        display: none;
+    }
+    .logo {
+        width: 170px;
+    }
+    .logo-light {
+        width: 170px;
+    }
+    .home {
+        z-index: 2;
+        margin-top: 90px;
+    }
+    .home__title {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .home__btn {
+        margin: 50px 0 110px 0;
+    }
+    .about {
+        margin-top: 70px;
+    }
+    .about__cards {
+        margin-top: 40px;
+    }
+    .about__card {
+        max-width: 100%;
+    }
+    .popular__card {
+        width: 100%;
+    }
+    .catering__card {
+        width: 100%;
+    }
+    .like-btn {
+        top: 16px;
+        left: 16px;
+        bottom: auto;
+        right: auto;
+    }
+    .catering__item {
+        width: 100%;
+    }
+    .catering__cards {
+        margin-top: 40px;
+    }
+    .rent {
+        margin-top: 50px;
+        padding: 325px 0 120px 0;
+        align-content: center;
+    }
+    .rent-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .rent__decription {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 160%;
+    }
+    .rent__btn {
+        margin-top: 40px;
+    }
+    .form__item {
+        margin-bottom: 5px;
+        height: 45px;
+    }
+    .form__item_mod {
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width:360px) {
+    .nav {
+        padding: 10px;
+    }
+    .nav-light {
+        padding: 10px;
+    }
+    .nav-light-scroll {
+        padding: 10px;
+    }
+    .tel {
+        margin: 0;
+    }
+    .home {
+        margin-top: 35px;
+    }
+    .burger-btn {
+        font-size: 14px;
+    }
+    .burger__item {
+        margin-top: 0;
+    }
+    .form__item {
+        margin-bottom: 5px;
+        height: 45px;
+    }
+    .form__title {
+        line-height: 15px;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .form__description {
+        margin-bottom: 5px;
+    }
+}

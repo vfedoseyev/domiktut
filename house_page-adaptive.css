@@ -1,0 +1,288 @@
+    @media(max-width:1300px) {
+        .parameters {
+            font-size: 12px;
+        }
+        .prise__value {
+            font-size: 18px;
+        }
+        .price {
+            padding: 30px 40px 40px 40px;
+        }
+    }
+    
+    @media(max-width:992px) {
+        .watching-video {
+            display: none;
+        }
+        .price-button {
+            font-size: 14px;
+        }
+        .price-button-callback {
+            font-size: 14px;
+        }
+        .video-map-container {
+            margin-top: 40px;
+        }
+        .map_house-page {
+            height: 472px;
+            margin-top: 50px;
+            margin-left: 0;
+        }
+        .map-container {
+            width: 100%;
+        }
+        .price__list_mod {
+            padding-left: 0;
+            width: 100%;
+            flex-direction: row;
+            display: flex;
+            margin-bottom: 9px;
+            margin-top: 0px;
+        }
+        .house-gallery {
+            margin: 0;
+        }
+        .house-gallery__main-photo {
+            width: 50%;
+            border-radius: 20px 20px 20px 20px;
+        }
+        .house-info-wrapper {
+            flex-direction: column;
+        }
+        .house-description-wrapper {
+            width: 100%;
+        }
+        .price {
+            width: 100%;
+            margin-left: 0;
+            padding: 50px 80px 80px 80px;
+        }
+        .video-map-container {
+            flex-direction: column;
+        }
+        .video {
+            height: 472px;
+            width: 100%;
+            margin: 0;
+        }
+        .map {
+            width: 100%;
+            margin: 0;
+        }
+        .house-gallery {
+            position: relative;
+        }
+        .house-gallery__like {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+    
+    @media(max-width:767px) {
+        .slider-counter {
+            display: flex;
+        }
+        .price-button-callback_mod {
+            display: none;
+        }
+        .price-button-callback-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            width: 100%;
+            height: 50px;
+            background: #F4683F;
+            border-radius: 200px;
+        }
+        .house-name__item_mod {
+            flex-direction: column;
+        }
+        #adress {
+            margin-left: 0;
+        }
+        .comeback-btn {
+            display: block;
+        }
+        .house-description__parameters {
+            border-bottom: none;
+        }
+        .house-description__parameters2 {
+            border-bottom: 1px solid #727488;
+            padding-bottom: 15px;
+        }
+        .caption-hidden {
+            display: block;
+        }
+        .house-gallery {
+            display: none;
+        }
+        .catalog-slider-single {
+            overflow: hidden;
+            position: relative;
+            display: block;
+            object-fit: cover;
+            width: 100%;
+        }
+        .catalog-slider-single img {
+            height: 32vh;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .house-gallery-slider img {
+            display: block;
+            object-fit: cover;
+            width: 100%;
+        }
+        button.house-gallery__like-slider {
+            background: rgba(255, 255, 255, 0.5);
+            box-shadow: 0px 4px 20px rgba(21, 22, 34, 0.2);
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 80px;
+            right: 20px;
+            left: auto;
+        }
+        .house-info-wrapper {
+            flex-direction: column-reverse;
+        }
+        .house-name-house-gallery-wrapper {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        #house-name {
+            font-size: 26px;
+            margin-top: 15px;
+        }
+        .house-name {
+            flex-direction: column;
+            align-items: baseline;
+            padding: 0;
+        }
+        #adress {
+            font-size: 16px;
+        }
+        .parameters-value {
+            font-size: 14px;
+        }
+        .house-gallery {
+            height: 290px;
+        }
+        .house-gallery__main-photo {
+            height: 260px;
+        }
+        .price {
+            margin-bottom: 40px;
+            position: relative;
+            box-shadow: none;
+            padding: 0;
+            border: none;
+        }
+        .house-name__item {
+            display: none;
+        }
+        .photo-viewing {
+            display: none;
+        }
+        .watching-video {
+            display: none;
+        }
+        .description-wrapper {
+            margin-top: 25px;
+        }
+        .price-buttons {
+            justify-content: space-around;
+        }
+        div .parameters-price_mod {
+            padding: 0;
+        }
+    }
+    
+    @media (max-width: 479px) {
+        .mobile-hidden {
+            display: none;
+        }
+        .reviews {
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+        .reviews__cards {
+            margin-top: 35px;
+        }
+        .price__list_mod {
+            margin-bottom: 0;
+        }
+        .price {
+            margin-top: 0;
+        }
+        .price-buttons {
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .price-buttons__col1 {
+            margin-right: 0;
+            width: 100%;
+        }
+        .price-button_hidden {
+            display: none;
+        }
+        .parameters-price {
+            font-size: 14px;
+            padding: 15px 0;
+        }
+        .parameters.parameters_mod {
+            flex-direction: row;
+            padding: 0;
+        }
+        .parameters-value {
+            padding-top: 6px;
+            padding-left: 15px;
+            width: 165px;
+        }
+        .house-description__parameters {
+            padding-top: 10px;
+            flex-direction: column;
+            margin: 0;
+            align-items: baseline;
+        }
+        .parameters {
+            margin-bottom: 0;
+            padding-top: 10px;
+        }
+        .number-beds {
+            width: 50%;
+        }
+        .map_house-page {
+            height: 200px;
+        }
+        .video {
+            height: 200px;
+        }
+        .parameters2 {
+            padding-top: 10px;
+            margin: 0;
+            display: flex;
+        }
+        .parameters__item {
+            width: 90px;
+        }
+        .container {
+            padding: 0 20px 80px 20px
+        }
+        .search-popup input {
+            font-size: 12px;
+        }
+    }

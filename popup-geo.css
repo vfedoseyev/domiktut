@@ -1,0 +1,64 @@
+.popup-geo {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000d1;
+    transition: all 0.3s;
+}
+
+.popup-geo.active {
+    z-index: 3;
+    opacity: 1;
+    visibility: visible;
+}
+
+.geo-form {
+    border: 1px solid #E1E1E1;
+    box-shadow: 0px 4px 50px rgb(255 255 255 / 86%);
+    border-radius: 20px;
+    font-size: 18px;
+    min-width: 328px;
+    max-width: 360px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    background: #fff;
+    padding: 10px;
+}
+
+.geo-form a {
+    color: #333;
+}
+
+.cities {
+    display: flex;
+    justify-content: space-around;
+    width: 230px;
+    background: none;
+}
+
+.cities a {
+    width: 100px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.cities a:hover {
+    font-size: 20px;
+    color: #F4683F;
+}

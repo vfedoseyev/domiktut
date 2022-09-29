@@ -1,0 +1,21 @@
+.menu-mobile {
+    padding: 30px 20px;
+    background-color: #161723;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-mobile-light {
+    color: #161723;
+}
+
+.header__geo {
+    color: #fff;
+}
+
+.color-black {
+    color: #161723;
+}

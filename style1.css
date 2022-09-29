@@ -1,0 +1,578 @@
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* прелоадер */
+
+.preloader {
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    left: 50%;
+    overflow: hidden;
+    padding: 10px 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    width: 180px;
+}
+
+.loader .ball {
+    background: #38d368;
+    border-radius: 5px;
+    display: block;
+    height: 10px;
+    left: 15px;
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: 'along';
+    -webkit-animation-timing-function: linear;
+}
+
+.loader .ball2 {
+    background: #508ec3;
+    border-radius: 5px;
+    display: block;
+    height: 10px;
+    left: 15px;
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: 'along';
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: -1s;
+}
+
+.loader ul {
+    margin: 0;
+    padding: 0;
+}
+
+.loader li {
+    background-color: #00bff3;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0;
+    height: 10px;
+    width: 30px;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: 'around';
+    -webkit-animation-timing-function: linear;
+}
+
+.loader li:nth-child(1) {
+    -webkit-animation-delay: 0s;
+}
+
+.loader li:nth-child(2) {
+    background-color: #82ca9c;
+    -webkit-animation-delay: 0.2s;
+}
+
+.loader li:nth-child(3) {
+    background-color: #f69679;
+    -webkit-animation-delay: 0.4s;
+}
+
+.loader li:nth-child(4) {
+    background-color: #acd373;
+    -webkit-animation-delay: 0.6s;
+}
+
+.loader li:nth-child(5) {
+    background-color: #959595;
+    -webkit-animation-delay: 0.8s;
+}
+
+@-webkit-keyframes around {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+
+@-webkit-keyframes along {
+    0% {
+        left: 0;
+        top: 5px;
+    }
+    5% {
+        top: 3px;
+    }
+    10% {
+        top: 5px;
+    }
+    15% {
+        top: 3px;
+    }
+    20% {
+        top: 5px;
+    }
+    25% {
+        top: 3px;
+    }
+    30% {
+        top: 5px;
+    }
+    35% {
+        top: 3px;
+    }
+    40% {
+        top: 5px;
+    }
+    45% {
+        top: 3px;
+    }
+    50% {
+        left: 100%;
+        top: 5px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 160%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+
+/* Скрытие объектов */
+
+.hidden {
+    display: none;
+}
+
+.mobile-visible {
+    display: none;
+}
+
+.small-visible {
+    display: none;
+}
+
+.tablet-visible {
+    display: none;
+}
+
+
+/* Контейнеры */
+
+.container {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.content {
+    margin: 0 -20px;
+}
+
+
+/* Заголовки */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'raleway', sans-serif;
+    color: #333333;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 140%;
+}
+
+h3 {
+    font-family: 'raleway', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 60px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+h4 {
+    font-family: 'raleway', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 150%;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+h5 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 150%;
+}
+
+
+/* Кнопки блоков */
+
+.btn-orange {
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 200px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 150%;
+    font-size: 18px;
+    background: #F4683F;
+    color: #fff;
+}
+
+.btn-orange:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.1);
+}
+
+
+/* .btn-orange:hover {
+    box-shadow: 5px 5px 40px 5px #f4683f;
+    background-color: #F4683F;
+    transition: all .5s;
+} */
+
+
+/* Формы */
+
+.form {
+    box-sizing: border-box;
+    width: 550px;
+    padding: 60px 80px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
+}
+
+.form__title {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 45px;
+    color: #333333;
+    margin-bottom: 20px;
+    font-feature-settings: 'pnum'on, 'lnum'on;
+}
+
+.form__description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.form__item {
+    height: 50px;
+    position: relative;
+    background: #FFFFFF;
+    border: 1px solid #C0C2D7;
+    box-sizing: border-box;
+    border-radius: 250px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    border: none;
+    background: #FFFFFF;
+}
+
+.form__label {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #C0C2D7;
+}
+
+.popup {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #0000006e;
+    transition: all 0.5s;
+}
+
+.popup.open {
+    display: block;
+}
+
+.popup__body {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.popup__close {
+    width: 34px;
+    height: 34px;
+    background: url(/images/svg/close.svg);
+    position: absolute;
+    right: 0;
+    top: -40px;
+}
+
+
+/* Pop-up */
+
+.pop-up {
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+
+/* Чекбокс */
+
+.checkbox {
+    width: 100%;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+.checkbox__input:checked+.checkbox__label::after {
+    transform: scale(1);
+}
+
+.checkbox__label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox__label::before {
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 18px;
+    height: 18px;
+    background: #FFFFFF;
+    border: 1px solid #C0C2D7;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 0 10px 0 0;
+}
+
+.checkbox__label::after {
+    top: 0;
+    left: 0;
+    content: url(images/svg/checkbox.svg);
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transform: scale(0);
+    transition: transform 0.1s;
+}
+
+
+/* Скролл-бар */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #E5E5E5;
+    width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #F4683F;
+    border-radius: 10px;
+    width: 6px;
+    height: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cf5a36;
+}
+
+
+/* Карта */
+
+.map {
+    width: 100vw;
+    height: 93vh;
+}
+
+
+/* Выпадающий список город */
+
+.city-list-btn {
+    background: none;
+    position: relative;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    transition: all 0.5 ease;
+}
+
+.city-list {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    z-index: 5;
+    padding: 15px 25px;
+    position: absolute;
+    left: -10px;
+    color: #333333;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 20px;
+    transition: all 0.5 ease;
+}
+
+.city-list li a {
+    line-height: 25px;
+    padding: 5px 0;
+    color: #333333;
+    transition: all 0.5 ease;
+}
+
+.city-list li a:hover {
+    font-size: 18px;
+    transition: all 0.2s ease;
+    color: #F4683F;
+}
+
+.city-list-btn:hover .city-list {
+    transition: all 0.5 ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.city-name_mod-white {
+    color: #fff;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.85);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.85);
+    }
+}
+
+.catalog-like.active {
+    color: #000000;
+}
+
+.catalog-like.active {
+    color: #F4683F;
+    background: #FFFFFF;
+}
+
+.price-button {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid #C0C2D7;
+    box-shadow: 0px 4px 20px rgb(21 22 34 / 10%);
+    border-radius: 150px;
+    display: inline-flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price-button_hidden {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-bottom: 20px; */
+}
+
+.time__center-line::after {
+    position: absolute;
+    top: 7px;
+    content: "";
+    width: 1px;
+    height: 26px;
+    background: #C0C2D7;
+}
+
+input[type="date"] {
+    content: 2222222;
+}
