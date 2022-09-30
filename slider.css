@@ -244,15 +244,13 @@
 /* Слайдер галерея*/
 
 .slider-gallery {
+
     width: 100%;
-    padding: 200px 10px;
-    min-width: 0;
-    position: relative;
+
 }
 
 .slider-gallery img {
-    object-fit: contain;
-    height: 850px;
+    padding: 0 100px;
 }
 
 .slider-gallery .slick-arrow {
@@ -308,6 +306,47 @@
     border-radius: 20px;
 }
 
+/* миниатюра внизу */
+.slider-gallery-small {
+    
+    min-width: 0;
+    
+    bottom: 0px;
+   
+}
+
+.slider-gallery-small img {
+    height: 10vh;
+    object-fit: contain;
+}
+
+
+.slider-gallery-small .slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-gallery-small .slick-dots li {
+    list-style: none;
+    margin: 0 8px;
+}
+
+.slider-gallery-small .slick-dots li.slick-active button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: #F4683F;
+    border-radius: 20px;
+}
+
+.slider-gallery-small .slick-dots button {
+    font-size: 0;
+    width: 6px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
 
 /* Слайдер каталог*/
 

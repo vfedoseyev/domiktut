@@ -53,7 +53,6 @@ get_header();
         <div class="arrow"></div>
     </div>
     <div class="burger__item">
-        <button class="burger-btn">Информация для юр. лиц</button>
         <button class="burger-btn catering__btn-burger">Повар - Кейтеринг</button>
         <button class="btn-orange call_request-btn">Заявка на подбор</button>
     </div>

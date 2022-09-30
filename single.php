@@ -460,7 +460,6 @@
 							</button>
 						</div>
 						<div class="price-buttons__col2">
-							<button class="price-button price-button_mod mobile-hidden">Информация для юр. лиц</button>
 							<button class="price-button catering__btn-burger">Повар - Кейтеринг</button>
 						</div>
 					</div>
@@ -515,7 +514,6 @@
 				<div class="arrow"></div>
 			</div>
 			<div class="burger__item">
-				<button class="burger-btn">Информация для юр. лиц</button>
 				<button class="burger-btn catering__btn-burger">Повар - Кейтеринг</button>
 				<button class="btn-orange call_request-btn">Заявка на подбор</button>
 			</div>
@@ -638,8 +636,21 @@
 				</div>
 			</div>
 		</div>
-		<div class="popup-photo-gallery ">
+		<div class="popup-photo-gallery">
 			<div class="slider-gallery">
+				<?php if (have_posts()) {
+					while (have_posts()) {
+						the_post(); ?>
+						<?php $images = acf_photo_gallery('house_photo', $post->ID);
+						if (count($images)) : ?>
+							<?php foreach ($images as $image) : ?>
+								<img src="<?php echo $image['full_image_url']; ?>">
+							<?php endforeach; ?>
+						<?php endif; ?>
+					<?php } /* конец while */ ?>
+				<?php } /* конец if */ ?>
+			</div>
+			<div class="slider-gallery-small">
 				<?php if (have_posts()) {
 					while (have_posts()) {
 						the_post(); ?>
